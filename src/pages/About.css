@@ -1,0 +1,800 @@
+.about-page {
+  min-height: 100vh;
+
+  background: #090909;
+
+  color: #f5f5f2;
+}
+
+
+/* HEADER */
+
+.about-header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  width: 100%;
+  height: 78px;
+
+  padding: 0 4.5vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(8, 8, 8, 0.78);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* HERO */
+
+.about-hero {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding: 140px 4.5vw 70px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(350px, 0.8fr);
+
+  grid-template-rows: 1fr auto;
+
+  gap: 40px 7vw;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 75% 35%,
+      rgba(217, 65, 65, 0.12),
+      transparent 30%
+    ),
+    #090909;
+}
+
+.about-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 75px 75px;
+
+  pointer-events: none;
+}
+
+.about-hero-left {
+  position: relative;
+
+  z-index: 2;
+
+  align-self: center;
+}
+
+.about-label {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: #d94141;
+
+  font-size: 0.64rem;
+  font-weight: 600;
+
+  letter-spacing: 0.2em;
+}
+
+.about-hero h1 {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(5rem, 9vw, 10rem);
+  font-weight: 500;
+
+  line-height: 0.86;
+
+  letter-spacing: -0.04em;
+
+  text-transform: uppercase;
+}
+
+.about-hero h1 span {
+  color: transparent;
+
+  -webkit-text-stroke: 1px rgba(245, 245, 242, 0.58);
+}
+
+.about-role {
+  margin-top: 28px;
+
+  color: #777;
+
+  font-size: 0.67rem;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+
+/* PORTRAIT */
+
+.about-portrait {
+  position: relative;
+
+  z-index: 2;
+
+  min-height: 650px;
+}
+
+.about-photo-placeholder {
+  width: 100%;
+  height: 100%;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #141414,
+      #0c0c0c
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: #3f3f3f;
+
+  font-size: 0.6rem;
+
+  letter-spacing: 0.2em;
+}
+
+
+/* QUOTE */
+
+.about-quote {
+  grid-column: 1 / -1;
+
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-quote > span {
+  color: #d94141;
+
+  font-size: 0.58rem;
+
+  letter-spacing: 0.18em;
+}
+
+.about-quote p {
+  max-width: 900px;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(2rem, 4vw, 4.5rem);
+
+  line-height: 1.05;
+
+  text-transform: uppercase;
+}
+
+.about-quote strong {
+  color: #d94141;
+
+  font-weight: 400;
+}
+
+
+/* BIOGRAPHY */
+
+.about-biography {
+  padding: 120px 4.5vw;
+
+  display: grid;
+
+  grid-template-columns:
+    70px
+    minmax(0, 1.4fr)
+    minmax(280px, 0.7fr);
+
+  gap: 60px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-section-number {
+  color: #d94141;
+
+  font-size: 0.68rem;
+}
+
+.about-small-label {
+  color: #777;
+
+  font-size: 0.58rem;
+
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+.about-biography-content h2 {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 15px;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(3rem, 5vw, 6rem);
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  text-transform: uppercase;
+}
+
+.about-biography-content h2 span {
+  color: #666;
+}
+
+.about-biography-content p {
+  max-width: 700px;
+
+  margin-top: 25px;
+
+  color: #8b8b8b;
+
+  font-size: 0.88rem;
+  line-height: 1.9;
+}
+
+
+/* PROFILE DATA */
+
+.about-profile-data {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-profile-data div {
+  padding: 18px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-profile-data span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #d94141;
+
+  font-size: 0.52rem;
+
+  letter-spacing: 0.16em;
+}
+
+.about-profile-data p {
+  color: #d4d4d4;
+
+  font-size: 0.78rem;
+}
+
+
+/* CREATIVE EXPERIENCE */
+
+.creative-experience {
+  padding: 100px 4.5vw;
+
+  background: #0c0c0c;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.creative-heading {
+  display: grid;
+
+  grid-template-columns: 70px 1fr;
+
+  gap: 40px;
+
+  margin-bottom: 50px;
+}
+
+.creative-heading > span {
+  color: #d94141;
+
+  font-size: 0.68rem;
+}
+
+.creative-heading h2 {
+  margin-top: 8px;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.creative-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.creative-item {
+  min-height: 105px;
+
+  padding: 20px 0;
+
+  display: grid;
+
+  grid-template-columns:
+    70px
+    minmax(250px, 0.8fr)
+    1fr;
+
+  align-items: center;
+
+  gap: 40px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition:
+    padding-left 0.3s ease,
+    background 0.3s ease;
+}
+
+.creative-item:hover {
+  padding-left: 15px;
+
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.creative-item > span {
+  color: #d94141;
+
+  font-size: 0.58rem;
+}
+
+.creative-item h3 {
+  font-family: "Oswald", sans-serif;
+
+  font-size: 1.9rem;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.creative-item p {
+  color: #777;
+
+  font-size: 0.78rem;
+}
+
+
+/* MANIFESTO */
+
+.about-manifesto {
+  padding: 130px 4.5vw;
+
+  background:
+    radial-gradient(
+      circle at 85% 50%,
+      rgba(217, 65, 65, 0.09),
+      transparent 30%
+    ),
+    #090909;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-manifesto h2 {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1200px;
+
+  margin-top: 30px;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(4rem, 8vw, 9rem);
+  font-weight: 500;
+
+  line-height: 0.9;
+
+  letter-spacing: -0.04em;
+
+  text-transform: uppercase;
+}
+
+.about-manifesto h2 span {
+  color: transparent;
+
+  -webkit-text-stroke: 1px rgba(245, 245, 242, 0.5);
+}
+
+.manifesto-bottom {
+  margin-top: 55px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.manifesto-bottom p {
+  max-width: 550px;
+
+  color: #808080;
+
+  font-size: 0.84rem;
+  line-height: 1.8;
+}
+
+.manifesto-index {
+  color: #252525;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: 7rem;
+}
+
+
+/* TOOLS */
+
+.about-tools {
+  padding: 100px 4.5vw;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.5fr;
+
+  gap: 80px;
+
+  background: #0c0c0c;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tools-heading {
+  display: flex;
+
+  gap: 30px;
+}
+
+.tools-heading > span {
+  color: #d94141;
+
+  font-size: 0.68rem;
+}
+
+.tools-heading h2 {
+  margin-top: 8px;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: 3rem;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.about-tools-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-tools-list div {
+  padding: 20px 0;
+
+  display: grid;
+
+  grid-template-columns: 60px 1fr;
+
+  align-items: center;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-tools-list span {
+  color: #d94141;
+
+  font-size: 0.58rem;
+}
+
+.about-tools-list h3 {
+  font-family: "Oswald", sans-serif;
+
+  font-size: 1.9rem;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+
+/* PROCESS */
+
+.about-process {
+  padding: 100px 4.5vw;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.process-flow {
+  margin-top: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+.process-flow div {
+  flex: 1;
+
+  min-height: 130px;
+
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #0d0d0d;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.process-flow div span {
+  color: #d94141;
+
+  font-size: 0.56rem;
+}
+
+.process-flow div h3 {
+  font-family: "Oswald", sans-serif;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.process-arrow {
+  color: #333;
+
+  font-size: 1.3rem;
+}
+
+
+/* CONTACT CTA */
+
+.about-contact {
+  padding: 80px 4.5vw;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  background: #0b0b0b;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-contact > div > span {
+  color: #d94141;
+
+  font-size: 0.58rem;
+
+  letter-spacing: 0.18em;
+}
+
+.about-contact p {
+  margin-top: 8px;
+
+  color: #777;
+
+  font-size: 0.78rem;
+}
+
+.about-contact a {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(2.3rem, 4vw, 4.5rem);
+
+  text-transform: uppercase;
+}
+
+.about-contact a span {
+  color: #d94141;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-portrait {
+    min-height: 550px;
+  }
+
+  .about-photo-placeholder {
+    min-height: 550px;
+  }
+
+  .about-biography {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .about-profile-data {
+    grid-column: 2;
+  }
+
+  .about-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .process-flow {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-header {
+    height: 68px;
+
+    padding: 0 18px;
+  }
+
+  .about-header .nav {
+    display: none;
+  }
+
+  .about-hero {
+    padding:
+      120px
+      18px
+      60px;
+  }
+
+  .about-hero h1 {
+    font-size: 4.5rem;
+  }
+
+  .about-portrait,
+  .about-photo-placeholder {
+    min-height: 450px;
+  }
+
+  .about-quote {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-biography {
+    padding: 80px 18px;
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .about-profile-data {
+    grid-column: auto;
+  }
+
+  .creative-experience {
+    padding: 80px 18px;
+  }
+
+  .creative-heading {
+    grid-template-columns: 35px 1fr;
+  }
+
+  .creative-item {
+    grid-template-columns: 35px 1fr;
+
+    gap: 15px;
+  }
+
+  .creative-item p {
+    grid-column: 2;
+  }
+
+  .about-manifesto {
+    padding: 90px 18px;
+  }
+
+  .about-manifesto h2 {
+    font-size: 4.2rem;
+  }
+
+  .manifesto-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .manifesto-index {
+    font-size: 4rem;
+  }
+
+  .about-tools {
+    padding: 80px 18px;
+  }
+
+  .about-process {
+    padding: 80px 18px;
+  }
+
+  .process-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .about-contact {
+    padding: 70px 18px;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

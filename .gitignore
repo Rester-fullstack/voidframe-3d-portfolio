@@ -1,8 +1,9 @@
 # Dependencies
 node_modules/
 
-# Production build
+# Build
 dist/
+build/
 
 # Environment variables
 .env
@@ -19,13 +20,29 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor
+# Editor / IDE
 .vscode/
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Operating system
 .DS_Store
 Thumbs.db
 
 # Vite
-*.local
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Cache
+.cache/
+.eslintcache
+
+# Temporary files
+*.tmp
+*.temp
