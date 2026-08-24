@@ -77,8 +77,8 @@ export default function CharacterDetails() {
         <nav className="nav">
           <Link to="/">Início</Link>
           <Link to="/characters">Personagens</Link>
-          <a href="/#about">Sobre</a>
-          <a href="/#contact">Contato</a>
+          <Link to="/#about">Sobre</Link>
+          <Link to="/#contact">Contato</Link>
         </nav>
       </header>
 

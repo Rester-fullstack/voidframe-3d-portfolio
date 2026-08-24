@@ -2,12 +2,14 @@ import "../App.css";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  const base = import.meta.env.BASE_URL;
+
   return (
     <main className="home">
       <header className="header">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           3D ARTIST
-        </a>
+        </Link>
 
         <nav className="nav">
           <Link to="/characters">Personagens</Link>
@@ -18,7 +20,6 @@ export default function Home() {
 
       <section className="hero" id="characters">
         <div className="hero-overlay" />
-
 
         <div className="hero-content">
           <span className="hero-label">DESIGN DE PERSONAGENS 3D</span>
@@ -41,7 +42,7 @@ export default function Home() {
 
         <div className="hero-character">
           <img
-            src="../characters/zora/zora-hero.png"
+            src={`${base}characters/zora/zora-hero.png`}
             alt="Personagem 3D em destaque"
           />
         </div>
@@ -56,7 +57,9 @@ export default function Home() {
         <div className="projects-heading">
           <div className="projects-heading-top">
             <span className="section-number">01</span>
-            <span className="section-label">TRABALHOS SELECIONADOS</span>
+            <span className="section-label">
+              TRABALHOS SELECIONADOS
+            </span>
           </div>
 
           <h2>Projetos em destaque</h2>
@@ -68,7 +71,7 @@ export default function Home() {
               <span className="character-number">01</span>
 
               <img
-                src="../characters/malik.png"
+                src={`${base}characters/malik.png`}
                 alt="Guerreiro do Norte"
               />
             </div>
@@ -88,7 +91,7 @@ export default function Home() {
               <span className="character-number">02</span>
 
               <img
-                src="../characters/kaira.png"
+                src={`${base}characters/kaira.png`}
                 alt="Soldado Sci-fi"
               />
             </div>
@@ -108,7 +111,7 @@ export default function Home() {
               <span className="character-number">03</span>
 
               <img
-                src="../characters/akari.png"
+                src={`${base}characters/akari.png`}
                 alt="Samurai Vermelha"
               />
             </div>
@@ -128,7 +131,7 @@ export default function Home() {
               <span className="character-number">04</span>
 
               <img
-                src="../characters/zora/zora-hero.png"
+                src={`${base}characters/zora/zora-hero.png`}
                 alt="Zora"
               />
             </div>
