@@ -135,7 +135,7 @@
 
   color: #777;
 
-  font-size: 0.67rem;
+  font-size: 0.90rem;
 
   letter-spacing: 0.16em;
 
@@ -203,7 +203,7 @@
 .about-quote > span {
   color: #d94141;
 
-  font-size: 0.58rem;
+  font-size: 0.90rem;
 
   letter-spacing: 0.18em;
 }
@@ -247,13 +247,13 @@
 .about-section-number {
   color: #d94141;
 
-  font-size: 0.68rem;
+  font-size: 1rem;
 }
 
 .about-small-label {
   color: #777;
 
-  font-size: 0.58rem;
+  font-size: 0.90rem;
 
   letter-spacing: 0.2em;
 
@@ -287,7 +287,7 @@
 
   color: #8b8b8b;
 
-  font-size: 0.88rem;
+  font-size: 0.90rem;
   line-height: 1.9;
 }
 
@@ -311,7 +311,7 @@
 
   color: #d94141;
 
-  font-size: 0.52rem;
+  font-size: 0.90rem;
 
   letter-spacing: 0.16em;
 }
@@ -319,7 +319,7 @@
 .about-profile-data p {
   color: #d4d4d4;
 
-  font-size: 0.78rem;
+  font-size: 0.80rem;
 }
 
 
@@ -346,7 +346,7 @@
 .creative-heading > span {
   color: #d94141;
 
-  font-size: 0.68rem;
+  font-size: 0.90rem;
 }
 
 .creative-heading h2 {
@@ -396,7 +396,7 @@
 .creative-item > span {
   color: #d94141;
 
-  font-size: 0.58rem;
+  font-size: 0.rem;
 }
 
 .creative-item h3 {
@@ -411,7 +411,7 @@
 .creative-item p {
   color: #777;
 
-  font-size: 0.78rem;
+  font-size: 0.90rem;
 }
 
 
@@ -472,7 +472,7 @@
 
   color: #808080;
 
-  font-size: 0.84rem;
+  font-size: 0.90rem;
   line-height: 1.8;
 }
 
@@ -518,7 +518,7 @@
 
   font-family: "Oswald", sans-serif;
 
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: 400;
 
   text-transform: uppercase;
@@ -631,7 +631,7 @@
 .about-contact > div > span {
   color: #d94141;
 
-  font-size: 0.58rem;
+  font-size: 0.78rem;
 
   letter-spacing: 0.18em;
 }
@@ -641,7 +641,7 @@
 
   color: #777;
 
-  font-size: 0.78rem;
+  font-size: 0.90rem;
 }
 
 .about-contact a {

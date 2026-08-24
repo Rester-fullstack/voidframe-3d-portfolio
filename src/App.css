@@ -133,23 +133,34 @@ img {
 .hero {
   position: relative;
 
-  width: 100%;
   min-height: 100vh;
+  height: 950px;
 
   display: flex;
   align-items: center;
 
-  padding: 120px 4.5vw 60px;
-
-  overflow: hidden;
+  padding: 120px 5vw 60px;
 
   background:
+    /* brilho vermelho atrás da personagem */
     radial-gradient(
-      circle at 74% 46%,
-      rgba(120, 22, 22, 0.15),
-      transparent 32%
+      ellipse at 76% 48%,
+      rgba(155, 24, 24, 0.20) 0%,
+      rgba(105, 15, 15, 0.10) 28%,
+      transparent 58%
     ),
+
+    /* pequeno brilho no centro */
+    radial-gradient(
+      ellipse at 52% 55%,
+      rgba(255, 255, 255, 0.025) 0%,
+      transparent 45%
+    ),
+
+    /* fundo */
     #080808;
+
+  overflow: hidden;
 }
 
 .hero::before {
@@ -160,18 +171,36 @@ img {
 
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.025) 1px,
+      rgba(255, 255, 255, 0.022) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.025) 1px,
+      rgba(255, 255, 255, 0.022) 1px,
       transparent 1px
     );
 
-  background-size: 70px 70px;
+  background-size: 72px 72px;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 90%,
+    transparent 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 90%,
+    transparent 100%
+  );
 
   pointer-events: none;
+
+  z-index: 0;
 }
 
 .hero-overlay {
@@ -188,6 +217,69 @@ img {
     rgba(8, 8, 8, 0.08) 80%,
     rgba(8, 8, 8, 0) 100%
   );
+}
+
+.hero-background-text {
+  position: absolute;
+
+  left: 52%;
+  top: 50%;
+
+  transform: translate(-50%, -50%) rotate(-90deg);
+
+  z-index: 1;
+
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(5rem, 9vw, 10rem);
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+
+  color: transparent;
+
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.035);
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-side-info {
+  position: absolute;
+
+  left: 48%;
+  bottom: 72px;
+
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.hero-side-info span {
+  margin-bottom: 7px;
+
+  color: var(--accent);
+
+  font-size: 0.52rem;
+
+  letter-spacing: 0.18em;
+}
+
+.hero-side-info p {
+  margin: 0;
+
+  color: #484848;
+
+  font-size: 0.47rem;
+  font-weight: 500;
+
+  letter-spacing: 0.18em;
 }
 
 
@@ -608,6 +700,7 @@ img {
     height: 430px;
   }
 }
+
 
 
 /* =========================

@@ -19,6 +19,7 @@ export default function Home() {
       <section className="hero" id="characters">
         <div className="hero-overlay" />
 
+
         <div className="hero-content">
           <span className="hero-label">DESIGN DE PERSONAGENS 3D</span>
 
