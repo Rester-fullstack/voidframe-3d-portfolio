@@ -10,15 +10,69 @@ O projeto foi desenvolvido utilizando **React, TypeScript, Vite e CSS**.
 
 ## 🌐 Demo
 
-(https://rester-fullstack.github.io/voidframe-3d-portfolio/)
+rester-fullstack.github.io/voidframe-3d-portfolio/
 
 > O link da demonstração será disponibilizado após a publicação do projeto.
 
 ---
 
-## 🖼️ Preview
+## 🖼️ Prévia
 
-![Preview do 3D Artist Portfolio](./screenshots/home.png)
+Abaixo estão algumas das principais telas desenvolvidas para o projeto.
+
+### Home
+
+Apresentação principal do portfólio, destacando a identidade visual e os personagens.
+
+![Home do 3D Artist Portfolio](./screenshots/home1.png)
+![Home do 3D Artist Portfolio](./screenshots/home2.png)
+
+---
+
+### Personagens
+
+Galeria com os personagens utilizados na demonstração da aplicação.
+
+![Página de Personagens](./screenshots/characters1.png)
+![Página de Personagens](./screenshots/characters2.png)
+
+---
+
+### Detalhes do personagem
+
+Página individual destinada à apresentação das informações e características de cada personagem.
+
+![Detalhes do Personagem](./screenshots/character-details1.png)
+![Detalhes do Personagem](./screenshots/character-details2.png)
+
+
+---
+
+### Processo de desenvolvimento — Zora
+
+A personagem Zora foi utilizada como case demonstrativo para apresentar visualmente as etapas de escultura, modelagem e texturização.
+
+![Processo da personagem Zora](./screenshots/zora-process1.png)
+![Processo da personagem Zora](./screenshots/zora-process2.png)
+
+---
+
+### Sobre
+
+Página conceitual criada para demonstrar como seria a apresentação profissional de um Character Artist / Designer 3D.
+
+![Página Sobre](./screenshots/about1.png)
+![Página Sobre](./screenshots/about2.png)
+![Página Sobre](./screenshots/about3.png)
+![Página Sobre](./screenshots/about4.png)
+
+---
+
+### Contato
+
+Interface destinada à apresentação dos canais de contato e formulário.
+
+![Página de Contato](./screenshots/contact.png)
 
 ---
 

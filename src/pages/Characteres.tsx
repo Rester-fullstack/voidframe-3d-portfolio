@@ -1,38 +1,6 @@
 import { Link } from "react-router-dom";
+import { characters } from "../data/characters";
 import "./Characters.css";
-
-const base = import.meta.env.BASE_URL;
-
-const characters = [
-  {
-    id: 1,
-    name: "Malik",
-    slug: "malik",
-    category: "Fantasia / Personagem 3D",
-    image: `${base}characters/malik.png`,
-  },
-  {
-    id: 2,
-    name: "Kaira",
-    slug: "kaira",
-    category: "Sci-fi / Character Design",
-    image: `${base}characters/kaira.png`,
-  },
-  {
-    id: 3,
-    name: "Akari",
-    slug: "akari",
-    category: "Personagem 3D",
-    image: `${base}characters/akari.png`,
-  },
-  {
-    id: 4,
-    name: "Zora",
-    slug: "zora",
-    category: "Cyberpunk / Character Design",
-    image: `${base}characters/zora/zora-hero.png`,
-  },
-];
 
 export default function Characters() {
   return (
