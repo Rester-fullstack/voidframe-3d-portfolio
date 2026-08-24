@@ -8,11 +8,14 @@ import About from "./pages/About";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<Characters />} />
-        <Route path="/characters/:slug" element={<CharacterDetails />} />
+        <Route
+          path="/characters/:slug"
+          element={<CharacterDetails />}
+        />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
       </Routes>
